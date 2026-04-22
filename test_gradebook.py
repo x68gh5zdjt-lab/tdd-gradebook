@@ -46,3 +46,4 @@ def test_curved_score_cap():
 def test_curved_score_negative_bonus():
     with pytest.raises(ValueError):
         curved_score(80, -5)
+
