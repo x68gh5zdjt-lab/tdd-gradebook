@@ -15,3 +15,7 @@ def test_is_passing_true():
 
 def test_is_passing_False():
     assert is_passing(45) == False
+
+def test_is_passing_invalid_type():
+     with pytest.raises(TypeError):
+        is_passing("Mccuen is the goat")
