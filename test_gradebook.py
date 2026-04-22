@@ -12,3 +12,6 @@ def test_letter_grade_invalid_type():
 
 def test_is_passing_true():
     assert is_passing(75) == True
+
+def test_is_passing_False():
+    assert is_passing(45) == False
