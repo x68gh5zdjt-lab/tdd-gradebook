@@ -23,8 +23,8 @@ def average(scores):
         raise TypeError("scores must be a list")
     if len(scores) == 0:
         raise ValueError("List cannot be empty")
-        if not all(isinstance(s, (int, float)) for s in scores):
-            raise TypeError("All scores must be numbers (int or float)")
+        if not all(isinstance(s, (int, float)) for s in scores): #REDUNDANT
+            raise TypeError("All scores must be numbers (int or float)") #REDUNDANT
     return round(sum(scores) / len(scores), 2)
 
 def curved_score(score, bonus):

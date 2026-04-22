@@ -1,6 +1,7 @@
 from gradebook import letter_grade
 from gradebook import is_passing
 from gradebook import average
+from gradebook import curved_score
 import pytest
 
 @pytest.mark.parametrize("score, expected", [(95, 'A'),(85, 'B'),(75, 'C'),(67, 'D'),(42, 'F')])
@@ -35,3 +36,6 @@ def test_average_not_a_list():
 def test_average_but_item():
     with pytest.raises(TypeError):
         average(80, "ninety" , 70)
+
+def test_curved_score_bald():
+    assert curved_score(80, 5) == 85
