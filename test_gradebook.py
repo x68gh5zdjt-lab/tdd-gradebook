@@ -1,4 +1,5 @@
 from gradebook import letter_grade
+from gradebook import is_passing
 import pytest
 
 @pytest.mark.parametrize("score, expected", [(95, 'A'),(85, 'B'),(75, 'C'),(67, 'D'),(42, 'F')])
