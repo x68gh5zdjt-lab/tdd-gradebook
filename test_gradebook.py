@@ -19,7 +19,7 @@ def test_is_passing_false():
 
 def test_is_passing_invalid_type():
      with pytest.raises(TypeError):
-        is_passing("Mccuen is the goat")
+        is_passing("Int only please")
 
 def test_average_works():
     assert average([80,90,70]) == 80.00 #DEVISON RETURNS A FLOAT
@@ -27,3 +27,7 @@ def test_average_works():
 def test_average_empty_list():
     with pytest.raises(ValueError):
         average([])
+
+def test_average_not_a_list():
+    with pytest.raises(TypeError):
+        average("Not a list")
