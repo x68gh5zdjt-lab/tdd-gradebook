@@ -28,4 +28,8 @@ def average(scores):
     return round(sum(scores) / len(scores), 2)
 
 def curved_score(score, bonus):
-    return 85
+    newscore = score + bonus
+    if newscore < 100:
+        return newscore
+    else: 
+        return 100
