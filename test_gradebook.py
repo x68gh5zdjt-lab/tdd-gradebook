@@ -22,7 +22,7 @@ def test_is_passing_invalid_type():
         is_passing("Mccuen is the goat")
 
 def test_average_works():
-    assert average([80,90,70]) == 80.0 #DEVISON RETURNS A FLOAT
+    assert average([80,90,70]) == 80.00 #DEVISON RETURNS A FLOAT
 
 #def test_average_doesnt_works():
-#    assert average(80,90,70) == 67.67 
+#    assert average([80,90,70]) == 67.67 
