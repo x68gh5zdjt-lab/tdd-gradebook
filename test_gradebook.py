@@ -1,5 +1,6 @@
 from gradebook import letter_grade
 from gradebook import is_passing
+from gradebook import average
 import pytest
 
 @pytest.mark.parametrize("score, expected", [(95, 'A'),(85, 'B'),(75, 'C'),(67, 'D'),(42, 'F')])
@@ -13,9 +14,10 @@ def test_letter_grade_invalid_type():
 def test_is_passing_true():
     assert is_passing(75) == True
 
-def test_is_passing_False():
+def test_is_passing_false():
     assert is_passing(45) == False
 
 def test_is_passing_invalid_type():
      with pytest.raises(TypeError):
         is_passing("Mccuen is the goat")
+
