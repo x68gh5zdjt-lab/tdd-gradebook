@@ -39,3 +39,6 @@ def test_average_but_item():
 
 def test_curved_score_bald():
     assert curved_score(80, 5) == 85
+
+def test_curved_score_cap():
+    assert curved_score(95 10) == 100
